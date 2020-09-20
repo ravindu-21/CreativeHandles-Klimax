@@ -121,12 +121,12 @@ body {
   margin-left: 50px;
   font-weight: bold;
 }
-#slide-show {
+.slide-show {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   padding: 20px 45px 20px 45px;
 }
-#slide-show img {
+.slide-show img {
   width: 100%;
   padding: 5px;
 }
