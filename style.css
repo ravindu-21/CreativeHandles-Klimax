@@ -1,27 +1,27 @@
-#phone-num {
-  background-color: #ebebeb;
-  text-align: right;
-  padding: 5px 25px 5px 25px;
-  /* display: flex; */
-}
-header {
-  margin: 0px 150px 0px 150px;
-}
-.navbar {
-  padding: 10px 45px 10px 45px;
-  background-color: white;
-}
-
 body {
-  /* background-color: rgb(183, 183, 211); */
   background-image: url("images/box-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Hind", sans-serif;
 }
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+header {
+  margin: 0px 150px 0px 150px;
+}
+#phone-num {
+  background-color: #ebebeb;
+  text-align: right;
+  padding: 5px 25px 5px 25px;
+}
+.navbar {
+  padding: 10px 45px 10px 45px;
+  background-color: white;
+}
 .navbar-brand > img {
-  /* width: 250px;
-  height: 130px; */
   width: 285px;
   height: 75px;
   margin: 12px 2px 12px 2px;
@@ -38,6 +38,18 @@ body {
   text-align: center;
   border-right: 1px solid black;
 }
+.navbar-light .navbar-nav .active>.nav-link{
+  color: #1a98d6;
+  font-weight: bold;
+}
+#inquiry-btn{
+  margin-left: 10px; 
+  width: 100%
+}
+.nav-link:hover{
+  border-bottom: 5px solid #1a98d6;
+}
+
 #intro {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -47,7 +59,6 @@ body {
   width: 90%;
   padding-right: 25px;
   padding-left: 55px;
-  /* padding-top: 25px; */
 }
 #intro article h1 {
   padding: 0px 25px 0px 95px;
@@ -61,6 +72,10 @@ body {
   width: 80px;
   left: 520px;
   background-color: #1a98d6;
+}
+#intro-cta{
+  margin-left: 90px; 
+  width: 250px;
 }
 .btn {
   background-color: #1a98d6;
@@ -76,8 +91,6 @@ body {
   width: 100%;
 }
 #companies {
-  /* background-color: #1a98d6; */
-  /* background-color: #1993d2; */
   color: white;
 }
 #companies article {
@@ -94,8 +107,8 @@ body {
   display: inline-block;
   height: 7px;
   width: 80px;
-  left: 420px;
-  top: -15px;
+  left: 470px;
+  top: 785px;
   background-color: white;
 }
 #company-cols {
@@ -104,22 +117,35 @@ body {
   margin: 10px 45px 10px 5px;
 }
 #company-cols div {
-  padding: 10px 45px 10px 45px;
+  padding: 16px 45px 10px 45px;
   text-align: center;
 }
-#partners {
-  /* background-color: white; */
+#company-cols div:nth-child(-n+2){
+  border-right: 2px solid white
 }
+.company-text {
+  padding: 15px 0px 10px 0px;
+}
+
 #partners article {
   margin: 0px 150px 0px 150px;
   padding: 30px 45px 10px 45px;
 }
-#partners article h1::after {
-  content: "*rotující slider s logama";
-  color: red;
-  font-size: large;
-  margin-left: 50px;
-  font-weight: bold;
+#slideshow-mob{
+  display: none;
+}
+.company-cta{
+  border: 2px solid white
+}
+#partners article h1::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 7px;
+  width: 80px;
+  left: 820px;
+  top: 1230px;
+  background-color: #1a98d6;
 }
 .slide-show {
   display: grid;
@@ -130,6 +156,7 @@ body {
   width: 100%;
   padding: 5px;
 }
+
 #services {
   background-color: #ebebeb;
 }
@@ -139,40 +166,21 @@ body {
   display: grid;
   grid-template-columns: 55% 45%;
 }
-#reference {
+#services-h1::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 7px;
+  width: 80px;
+  left: 500px;
+  top: 1570px;
   background-color: #1a98d6;
-  padding: 30px 45px 30px 45px;
 }
-#news {
-  background-color: white;
-}
-#news article {
-  margin: 0px 150px 0px 150px;
-  padding: 50px 45px 70px 45px;
-}
-#news-container {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  padding-top: 20px;
-}
-#contact-info {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-top: 60px;
-  /* margin-bottom: 40px; */
-}
-#contact-info div {
-  display: flex;
-  text-align: center;
-  font-weight: bolder;
-  padding-left: 50px;
-}
-
+/* 3x2 diagram for to services */
 #service-diagram {
   display: grid;
   grid-template-columns: 49% 49%;
   padding-left: 3%;
-  grid-gap: 2%;
 }
 .services-columns {
   display: grid;
@@ -191,29 +199,95 @@ body {
 .right div {
   border-left: 1px solid black;
 }
-.highlight{
+.highlight {
   color: #1a98d6;
 }
-footer{
+#reference {
+  background-color: #1a98d6;
+  padding: 30px 45px 30px 45px;
+}
+
+#news {
+  background-color: white;
+}
+#news article {
+  margin: 0px 150px 0px 150px;
+  padding: 50px 45px 70px 45px;
+}
+#news h1::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 7px;
+  width: 80px;
+  left: 300px;
+  top: 2170px;
+  background-color: #1a98d6;
+}
+#news-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding-top: 20px;
+}
+#news-btn{
+  text-align: right; 
+  padding-right: 30px
+}
+#news-btn button {
+  background-color: white;
+  color: #1a98d6;
+  font-weight: bold;
+  border: 2px solid #1a98d6;
+}
+#contact-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 60px;
+  /* margin-bottom: 40px; */
+}
+#contact-info span{
+  font-size: 50px;
+}
+#contact-info div {
+  display: flex;
+  text-align: center;
+  font-weight: bolder;
+  padding-left: 50px;
+}
+
+footer {
   background-color: black;
   color: white;
 }
-#foot-content{
+#foot-content {
   margin: 0px 150px 0px 150px;
   padding: 50px 45px 30px 45px;
   display: grid;
   grid-template-columns: 45% 13% 22% 20%;
 }
-.socialmedia-imgs{
+#footer-list {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0px;
+}
+.socialmedia-imgs {
   padding: 15px;
   border: 2px solid white;
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
 }
-#copyrights{
+#copyrights {
   padding: 20px 150px 20px 150px;
   background-color: white;
   color: black;
   font-weight: bold;
 }
+#foot-left{
+  text-align: left; 
+  font-style: italic
+}
+#footer-text{
+  padding: 20px 40px 2px 0px
+}
+

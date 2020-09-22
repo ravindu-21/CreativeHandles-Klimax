@@ -12,74 +12,95 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width : 360px) and (max-width : 640px)"
+      href="mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1030px) and (max-width: 1366px)"
+      href="laptop-small.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="node_modules\sal.js\dist\sal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>KLIMAX - Úvodní strana</title>
+    <script src="node_modules\sal.js\dist\sal.js"></script>
+    <title>KLIMAX - Home</title>
   </head>
+
   <body>
     <header>
       <div id="phone-num">
-        <img
-          src="images\tel-icon.png"
-          alt="telephone"
-          style="float: right: ;;"
-        />
+        <img src="images\tel-icon.png" alt="telephone" />
         <span>+420 417 568 425</span>
       </div>
-      <nav class="navbar navbar-expand-sm">
-        <!-- Brand -->
+
+      <nav class="navbar navbar-expand-md navbar-light">
+        <!-- logo-->
         <a class="navbar-brand" href="#"
           ><img src="images\klimax-logo.png" alt=""
         /></a>
 
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Klimax</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Instalace a servis</a>
-          </li>
+        <!-- Toggler/collapsible Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
 
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbardrop"
-              data-toggle="dropdown"
-            >
-              Hledáme partnery
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Link 1</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">kontakt</a>
-          </li>
-          <button
-            type="button"
-            class="btn"
-            style="margin-left: 10px; width: 100%"
-          >
-            poptávka
-          </button>
-        </ul>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Klimax</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Instalace a servis</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                Hledáme partnery
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">kontakt</a>
+            </li>
+            <button type="button" class="btn" id="inquiry-btn">poptávka</button>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <section id="intro">
-      <article>
-        <h1>Váš partner <br /><b>v prodeji a servisu klimatizací</b></h1>
-        <button
-          type="button"
-          class="btn"
-          style="margin-left: 90px; width: 250px"
-        >
+      <article data-sal="fade"
+      data-sal-duration="1500"
+      data-sal-delay="400"
+      data-sal-easing="ease-out-back">
+        <h1 style="text-transform: initial">
+          Váš partner <br /><b>v prodeji a servisu klimatizací</b>
+        </h1>
+        <button type="button" class="btn" id="intro-cta">
           Výhody partnerství
         </button>
       </article>
@@ -88,88 +109,92 @@
       </div>
     </section>
     <img src="images\blueShape.png" alt="" id="blue-curve-top" />
-
+    <!-- Section about distributors  -->
     <section id="companies">
       <article>
         <h1>Jsme distributoři</h1>
-        <div id="company-cols">
-          <div style="border-right: 2px solid white">
+        <div id="company-cols" data-sal="slide-down"
+        data-sal-duration="1200"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-back">
+          <div>
             <img src="images\toshiba.png" alt="toshiba" />
-            <p style="padding: 15px 0px 10px 0px">
+            <p class="company-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Maecen.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Maecen
             </p>
-            <button
-              type="button"
-              class="btn btn-default"
-              style="border: 2px solid white"
-            >
+            <button type="button" class="btn btn-default company-cta">
               Chci více informací
             </button>
           </div>
-          <div style="border-right: 2px solid white">
+          <div>
             <img src="images\hokkaido.png" alt="hokkaido" />
-            <p style="padding: 15px 0px 10px 0px">
+            <p class="company-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Maecen.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Maecen
             </p>
-            <button
-              type="button"
-              class="btn btn-default"
-              style="border: 2px solid white"
-            >
+            <button type="button" class="btn btn-default company-cta">
               Chci více informací
             </button>
           </div>
           <div>
             <img src="images\inventor.png" alt="inventor" />
-            <p style="padding: 15px 0px 10px 0px">
+            <p class="company-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Maecen.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Maecen
             </p>
-            <button
-              type="button"
-              class="btn btn-default"
-              style="border: 2px solid white"
-            >
+            <button type="button" class="btn btn-default company-cta">
               Chci více informací
             </button>
           </div>
         </div>
       </article>
     </section>
-
-    <section id="partners">
+    <!-- Logo carousel section -->
+    <section id="partners" data-sal="fade"
+    data-sal-duration="1200"
+    data-sal-delay="400"
+    data-sal-easing="ease-out-back">
       <article>
         <h1 style="font-weight: bolder">
           KLIMAX TEPLICE s.r.o. spolupracuje s
         </h1>
-        <div class="carousel slide" data-ride="carousel">
+        <div class="carousel slide" data-ride="carousel" id="slideshow-def">
           <div class="carousel-inner">
-            <div class="carousel-item active" id="part">
+            <div class="carousel-item active">
               <div class="slide-show">
                 <center><img src="images\omv_logo.png" alt="omv" /></center>
                 <center>
-                  <img src="images\Veolia_logo.png" alt="veolia" />
+                  <img
+                    src="images\Veolia_logo.png"
+                    alt="veolia"
+                    style="padding-top: 45px"
+                  />
+                </center>
+                <center>
+                  <img src="images\ukcom_logo.png" alt="" style="width: 50%" />
                 </center>
                 <center>
                   <img
-                    src="images\ukcom_logo.png"
-                    alt=""
-                    style="width: 50%; padding-left: 10px"
+                    src="images\bata-logo.png"
+                    alt="bata"
+                    style="padding-top: 45px"
                   />
                 </center>
-                <center><img src="images\bata-logo.png" alt="bata" /></center>
               </div>
             </div>
             <div class="carousel-item">
               <div class="slide-show">
                 <center><img src="images\omv_logo.png" alt="omv" /></center>
                 <center>
-                  <img src="images\Veolia_logo.png" alt="veolia" />
+                  <img
+                    src="images\Veolia_logo.png"
+                    alt="veolia"
+                    style="padding-top: 45px"
+                  />
                 </center>
                 <center>
                   <img
@@ -178,18 +203,63 @@
                     style="width: 50%"
                   />
                 </center>
-                <center><img src="images\bata-logo.png" alt="bata" /></center>
+                <center>
+                  <img
+                    src="images\bata-logo.png"
+                    alt="bata"
+                    style="padding-top: 45px"
+                  />
+                </center>
               </div>
             </div>
           </div>
         </div>
+        <!-- carousel fitting to mobile device  -->
+        <div class="carousel slide" data-ride="carousel" id="slideshow-mob">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slide-show">
+                <center><img src="images\omv_logo.png" alt="omv" /></center>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <center class="slide-show">
+                <img
+                  src="images\Veolia_logo.png"
+                  alt="veolia"
+                  style="padding-top: 45px"
+                />
+              </center>
+            </div>
+          <div class="carousel-item">
+            <center class="slide-show">
+              <img
+                src="images\ukcom_logo.png"
+                alt="omv"
+                style="width: 50%"
+              />
+            </center>
+          </div>
+          <div class="carousel-item">
+            <center class="slide-show">
+              <img
+                src="images\bata-logo.png"
+                alt="bata"
+                style="padding-top: 45px"
+              />
+            </center>
+          </div>
+        </div>
       </article>
     </section>
-
+    <!-- section about klimax's services -->
     <section id="services">
       <article>
-        <div>
-          <h1 style="font-weight: bolder">Prodej klimatizací</h1>
+        <div data-sal="slide-right"
+        data-sal-duration="1200"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-back">
+          <h1 id="services-h1" style="font-weight: bolder">Poskytujeme vám</h1>
           <p style="padding-left: 20px">
             "Lorem ipsum dolor sit amet,
             <span class="highlight">consectetur</span> adipiscing elit, sed do
@@ -214,7 +284,10 @@
             anim id est laborum."
           </p>
         </div>
-        <div id="service-diagram">
+        <div id="service-diagram" data-sal="fade"
+        data-sal-duration="1200"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-back">
           <div class="services-columns">
             <div>
               <img src="images\kosik.png" alt="" />
@@ -258,11 +331,14 @@
         </button>
       </center>
     </section>
-
+    
     <section id="news">
       <article>
         <h1 style="font-weight: bolder">Novinky</h1>
-        <div id="news-container">
+        <div id="news-container" data-sal="slide-right"
+        data-sal-duration="1200"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-back">
           <div>
             <h2 style="font-weight: bolder; color: #1a98d6">
               Toshiba uvádí na trh nový model
@@ -276,22 +352,14 @@
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
-            <div style="text-align: right; padding-right: 30px">
-              <button
-                type="button"
-                class="btn"
-                style="
-                  background-color: white;
-                  color: #1a98d6;
-                  font-weight: bold;
-                  border: 2px solid #1a98d6;
-                "
-              >
-                Všechny novinky
-              </button>
+            <div style="text-align: right; padding-right: 30px" id="news-btn">
+              <button type="button" class="btn">Všechny novinky</button>
             </div>
           </div>
-          <img src="images\ac-fans-news.png" alt="" style="width: 100%" />
+          <img data-sal="flip-down"
+          data-sal-duration="1500"
+          data-sal-delay="400"
+          data-sal-easing="ease-out-back" src="images\ac-fans-news.png" alt="" style="width: 100%" />
         </div>
 
         <section id="contact-info">
@@ -302,7 +370,7 @@
                 alt=""
                 style="width: 40px; height: auto"
               />
-              <span style="font-size: 50px">+420 123 456 789</span>
+              <span>+420 123 456 789</span>
             </div>
           </center>
           <center>
@@ -312,7 +380,7 @@
                 alt=""
                 style="width: 40px; height: auto"
               />
-              <span style="font-size: 50px">info@klimax.cz</span>
+              <span>info@klimax.cz</span>
             </div>
           </center>
         </section>
@@ -321,9 +389,9 @@
 
     <footer>
       <div id="foot-content">
-        <div style="text-align: left; font-style: italic">
-          <img src="images\klimax-logo-white.png" alt="klimax" />
-          <p style="padding: 20px 40px 2px 0px">
+        <div id="foot-left">
+          <img src="images\klimax-logo-white.png" alt="klimax" id="foot-logo" />
+          <p id="footer-text">
             Firma vznikla v roce 1994. Zakladatelem a majitelem je Vladislav
             Dlouhý jako fyzická osoba a jako firemní obchodní jméno byl určen
             název KLIMAX. Hlavní činností firmy je od prvopočátku výroba,
@@ -333,7 +401,7 @@
         </div>
         <div>
           <u>NABÍDKA</u>
-          <ul style="list-style: none; margin-top: 30px; padding: 0px">
+          <ul id="footer-list">
             <li>DOMŮ</li>
             <li>O NÁS</li>
             <li>SLUŽBY</li>
@@ -352,7 +420,7 @@
         </div>
         <div>
           <u style="text-transform: uppercase">Sociální sítě</u>
-          <div style="padding-top: 30px">
+          <div style="padding-top: 30px" id="socialmedia">
             <img
               src="images\fb-icon.png"
               alt="vist us on facebook"
@@ -379,5 +447,11 @@
         <p style="float: right">Grafický design a vývoj MKGTO, s. r. o.</p>
       </div>
     </footer>
+
+    <script>
+      sal({
+        once: true // animation only works for initial scroll
+                });
+    </script>
   </body>
 </html>

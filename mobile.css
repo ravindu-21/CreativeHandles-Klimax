@@ -1,0 +1,197 @@
+header,
+#services article,
+#news article,
+#foot-content {
+  margin: 0px;
+}
+.navbar-brand > img {
+  width: 160px;
+  height: 39px;
+  margin: 12px 2px 12px 12px;
+}
+.navbar {
+  padding: 2px;
+}
+#phone-num {
+  font-size: smaller;
+  text-align: center;
+}
+#phone-num img {
+  width: 1.2em;
+}
+.navbar-nav {
+  margin-left: 0%;
+  display: block;
+}
+#inquiry-btn {
+  margin-left: 25%;
+  width: 50%;
+}
+#intro {
+  display: block;
+  margin: 5px;
+}
+#intro article {
+  text-align: center;
+}
+#intro article h1 {
+  padding: 15px 2px 0px 5px;
+  font-size: 27px;
+  text-align: center;
+}
+#intro article h1::before,
+#news h1::before,
+#services-h1::before {
+  display: none;
+}
+#intro div img {
+  width: 95%;
+  padding-right: 0px;
+  padding-top: 50px;
+  padding-left: 7px;
+}
+#intro-cta {
+  margin-left: 0px;
+  width: 200px;
+  font-size: smaller;
+}
+#blue-curve-top {
+  display: none;
+}
+#companies {
+  background-color: #1993d2;
+}
+#companies article {
+  margin: 5px;
+  padding: 6px;
+}
+h1 {
+  font-size: 1.5em;
+  padding-top: 10px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  text-align: center;
+}
+#company-cols {
+  display: block;
+  margin: 10px 5px 10px 5px;
+}
+#company-cols div {
+  padding: 12px 0px 10px 0px;
+  text-align: center;
+}
+#company-cols div img {
+  width: 80%;
+}
+
+.company-text,
+#news article {
+  font-size: smaller;
+}
+.company-cta {
+  font-size: smaller;
+}
+#company-cols div:nth-child(-n + 2) {
+  border-bottom: 2px solid white;
+  border-right: none;
+}
+
+#partners article {
+  margin: 0px;
+  padding: 0px;
+  height: 50vh;
+}
+#slideshow-def {
+  display: none;
+}
+#slideshow-mob {
+  display: block;
+  margin-bottom: 10px;
+}
+.slide-show img:nth-child(2n+1) {
+  width: 80%;
+}
+#services article {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 0px 7px 0px;
+  display: block;
+}
+#services article p {
+  font-size: smaller;
+  padding-right: 20px;
+}
+.services-columns div img {
+  width: 40px;
+  height: 40px;
+}
+.slide-show {
+  display: block;
+  padding: 2px;
+}
+#reference {
+  background-color: #1a98d6;
+  padding: 10px 15px 10px 15px;
+}
+.btn {
+  font-size: smaller;
+}
+#news article {
+  padding: 5px;
+}
+#news-container {
+  display: block;
+}
+#news-btn button {
+  margin-right: 25%;
+  margin-bottom: 5%;
+}
+p {
+  text-align: center;
+  padding-left: 20px;
+}
+#contact-info div {
+  text-align: center;
+  padding-left: 5px;
+}
+#contact-info span {
+  font-size: 18px;
+}
+#contact-info {
+  margin-top: 20px;
+  text-align: center;
+  /* margin-bottom: 40px; */
+}
+#foot-content {
+  margin: 3px;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  font-size: small;
+}
+#foot-left {
+  text-align: center;
+  font-style: italic;
+  padding-top: 16px;
+}
+#socialmedia {
+  display: flex;
+  padding-left: 30%;
+}
+#footer-text {
+  padding: 2px 4px 2px 0px;
+}
+#copyrights {
+  padding: 0px;
+  text-align: center;
+  font-size: xx-small;
+}
+.socialmedia-imgs {
+  width: 50px;
+  height: 50px;
+}
+#foot-logo {
+  width: 60%;
+  padding-bottom: 4px;
+}
